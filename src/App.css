@@ -1,0 +1,53 @@
+/*Background*/
+body {
+  background-image: url(./imagen/fondo.jpg);
+}
+
+/* Columns, position */
+.grid {
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
+  display: grid;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 2px solid rgb(24, 162, 204);
+  outline: none;
+  background-color: rgba(122, 45, 133, 0.75);
+}
+
+.grid > button:hover,
+.grid > button:focus {
+  background-color: rgba(122, 45, 133, 0.75);
+}
+
+.one {
+  grid-column: span 2;
+}
+
+.output .previous-operand {
+  color: rgba(10, 10, 10, 0.75);
+  font-size: 2.5rem;
+}
+
+.output .current-operand {
+  color:  rgba(10, 10, 10, 0.75);
+  font-size: 2.5rem;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(243, 236, 243, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: .25rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
